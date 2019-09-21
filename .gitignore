@@ -1,0 +1,5 @@
+bin/
+
+# Xcode
+xcuserdata/
+/*.gcno
