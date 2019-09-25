@@ -21,11 +21,11 @@ public:
   ofColor backgroundColor;
   ofMutex mutex;
   MLTK mltk;
-  
+
   Pool aggrPool;
-  
+
   ofxPanel gui;
-  
+
   ofParameter<bool> showFps;
   ofParameter<ofColor> graphColor;
   ofParameter<float> coefsNoveltyFactor;

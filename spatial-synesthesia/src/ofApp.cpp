@@ -84,9 +84,12 @@ void ofApp::draw(){
   if (showCoefs) {
     line.draw();
   }
+
+  
+  
+  
   
   if (showHpcp) {
-    // TODO: make bars non-overlapping w/ same colors
     for (int i = 0; i < hpcp.size(); i++) {
       ofDrawRectangle(i * hpcpBandWidth,
                       ofGetHeight(),
@@ -94,7 +97,8 @@ void ofApp::draw(){
                       -ofMap(hpcp[i], 0, 1.0, 0, ofGetHeight(), true) * hpcpNoveltyFactor.get());
     }
   }
-  
+
+
   if (showGui) {
     gui.draw();
   }
