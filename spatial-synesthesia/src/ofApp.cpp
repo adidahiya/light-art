@@ -32,6 +32,23 @@ void ofApp::setup(){
   gui.add(coefsNoveltyFactor.set("MFCC Coefs Novelty Factor", 4.0, 0.0001, 8.0));
   gui.add(bandsNoveltyFactor.set("MFCC Bands Novelty Factor", 1.0, 0.0001, 1.0));
   gui.add(hpcpNoveltyFactor.set("HPCP Novelty Factor", 1.0, 0.0001, 1.0));
+  
+  mainOutputSyphonServer.setName("Screen Output");
+  individualTextureSyphonServer.setName("Texture Output");
+  mClient.setup();
+  //using Syphon app Simple Server, found at http://syphon.v002.info/
+  mClient.set("","Simple Server");
+//  tex.allocate(200, 100, GL_RGBA);
+  ofSetFrameRate(60);
+
+//  memset(dmxData, 0, DMX_DATA_LENGTH);
+//  dmxInterface = ofxGenericDmx::createDevice(DmxDevice::DMX_DEVICE_RAW);
+//  bool opened = dmxInterface->open();
+//  if (dmxInterface == 0 || !opened) {
+//    ofLog(OF_LOG_WARNING, "No FTDI Device Found\n" );
+//  } else {
+//    ofLog(OF_LOG_NOTICE, "isOpen: %i\n", dmxInterface->isOpen());
+//  }
 }
 
 //--------------------------------------------------------------
@@ -43,6 +60,21 @@ void ofApp::update(){
   
   // this runs the analysis chain that's been declared inside ofxMLTK
   mltk.run();
+//
+//  setColorsToSend();
+//
+//  dmxData[1] = int(red);
+//  dmxData[2] = int(green);
+//  dmxData[3] = int(blue);
+//  // force first byte to zero (it is not a channel but DMX type info - start code)
+//  dmxData[0] = 0;
+//
+//  if (!dmxInterface || !dmxInterface->isOpen()) {
+//    // noop
+//  } else {
+//    //send the data to the dmx interface
+//    dmxInterface->writeDmx(dmxData, DMX_DATA_LENGTH);
+//  }
 }
 
 //--------------------------------------------------------------
@@ -61,9 +93,9 @@ void ofApp::draw(){
   float mfccBandWidth = (ofGetWidth() / float(mfcc_bands.size()));
   float mfccCoefsWidth = (ofGetWidth() / float(mfcc_coefs.size()));
   float hpcpBandWidth = (ofGetWidth() / float(hpcp.size()));
-  
+
   ofSetColor(graphColor.get());
-  
+
   if (showBands) {
     for (int i = 0; i < mfcc_bands.size(); i++) {
       ofDrawRectangle(i * mfccBandWidth,
@@ -72,9 +104,9 @@ void ofApp::draw(){
                       -ofMap(mfcc_bands[i]/rms, 0, 1.0, 0, ofGetHeight(), true) * bandsNoveltyFactor.get());
     }
   }
-  
+
   ofPolyline line;
-  
+
   ofSetLineWidth(6);
   for (int i = 0; i < mfcc_coefs.size(); i++) {
     line.lineTo(i * mfccCoefsWidth,
@@ -99,10 +131,23 @@ void ofApp::draw(){
   }
 
 
+  // Syphon Stuff
+  
+  mClient.draw(50, 50);
+  mainOutputSyphonServer.publishScreen();
+
+  
   if (showGui) {
     gui.draw();
   }
 }
+
+
+//void ofApp::setColorsToSend() {
+//  red = 0;
+//  green = 100;
+//  blue = 50;
+//}
 
 
 //-----
@@ -177,4 +222,17 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){
   
+}
+
+//--------------------------------------------------------------
+void ofApp::exit() {
+//  if (dmxInterface && dmxInterface->isOpen()) {
+//    // send all zeros (black) to every dmx channel and close!
+//    for (int i = 0; i <= DMX_DATA_LENGTH; i++) {
+//      dmxData[i] = 0;
+//    }
+//
+//    dmxInterface->writeDmx(dmxData, DMX_DATA_LENGTH);
+//    dmxInterface->close();
+//  }
 }

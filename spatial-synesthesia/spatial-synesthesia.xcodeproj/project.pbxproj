@@ -14,6 +14,7 @@
 		15BA2BB7A5822F6CED14C8FE /* streamingalgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15522567E896C57D2FF07866 /* streamingalgorithm.cpp */; };
 		1BF7073946C29AFCC69CB11B /* FreesoundRhythmDescriptors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90E25C535BC39A70E23A9748 /* FreesoundRhythmDescriptors.cpp */; };
 		1E103B8DA08AFE03F5CC5968 /* MusicRhythmDescriptors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D8CC65439C55ECAAA884659 /* MusicRhythmDescriptors.cpp */; };
+		208966409696756BEA57390F /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB8055DE5121CC82A29B21 /* ofxSyphonServer.mm */; };
 		2133F599233977F20A12ED1D /* ringbufferinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD7FCED2062457663EFC95ED /* ringbufferinput.cpp */; };
 		22EA8956062BFBF5CCE2A556 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0B01C80B66DE17F237F932 /* ofxBaseGui.cpp */; };
 		2FD87986820697C7DAD5B1FD /* streamingalgorithmwrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B6ED8CA870918992B628E4D /* streamingalgorithmwrapper.cpp */; };
@@ -24,12 +25,15 @@
 		3D6D411A2B64123B0AD64AF4 /* FreesoundSfxDescriptors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E3CEEF8004DA756DE4B8301 /* FreesoundSfxDescriptors.cpp */; };
 		44153CE5915215B0BF964074 /* ringbufferoutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99D4AD38ED705BABB668A105 /* ringbufferoutput.cpp */; };
 		46A8F349C7A224DEFA0C2793 /* ofxInputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A522444B2B1AAF88CE6058AC /* ofxInputField.cpp */; };
+		4D508D34156E7076531D9084 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; };
 		4E5ADAA664BC238387DC6E28 /* jsonconvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D37A846C97D55EBF60226D /* jsonconvert.cpp */; };
 		52BAC6129A2BE01E38C10C2B /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13CB073EABAA36D644573AE3 /* network.cpp */; };
 		57E3BFC041FF64EC8328548D /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1AC4909CA0CA87E32517F8A /* ofxLabel.cpp */; };
 		59EE449B1209123021572C58 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7894B9BD07D355686CC3E57 /* ofxToggle.cpp */; };
+		5A52A19F20AB836365879562 /* ofxSyphonServerDirectory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BB69528FBF8C30E2355CC /* ofxSyphonServerDirectory.mm */; };
 		5B31FE298A18780290733229 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBE6BEC48579CBFC2F463E3 /* VideoToolbox.framework */; };
 		698146054EB421673C35A4B0 /* MusicTonalDescriptors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EA40CC69C8A020CAABFE69B /* MusicTonalDescriptors.cpp */; };
+		6B1931B9B37F8848BB311D2D /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC933811B04037C327EB7DDD /* ofxSyphonClient.mm */; };
 		77278542603035A4EFF239A3 /* devnull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE8E6A94C27BD01A27755665 /* devnull.cpp */; };
 		77DF55856BFDE64250D28383 /* QtCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA920B139AFD82B0F9089910 /* QtCore.framework */; };
 		791B38C253C618BE14B86192 /* range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 859034925530181BB31F252F /* range.cpp */; };
@@ -50,6 +54,7 @@
 		CC6AE43FBB8E56B055F7685D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7B7E9726CBDED7B0751CD /* ofxButton.cpp */; };
 		D667641511EE49A3F01333B1 /* connector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EDB7302B4593A11FF90EF /* connector.cpp */; };
 		D8EB5848155FA7A493715F3F /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA59D246321FB11F05ADCE5B /* ofxPanel.cpp */; };
+		E1A3FD40C8BCD507345F1126 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; };
 		E33C6898F442AB574089745D /* yamlast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B16E916802B2EF9C745A6994 /* yamlast.cpp */; };
 		E43ACFF94744184D75C26FA0 /* poolstorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7574FE2D793419E91C836D2B /* poolstorage.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -58,6 +63,7 @@
 		E79C700DFB270169ABDA925C /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BDD484ED1C644306866484 /* ofxSliderGroup.cpp */; };
 		E83688D57E19ECCB8C004A52 /* configurable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 156E7710B7874FF36BB0A221 /* configurable.cpp */; };
 		EA41C8B468F7297076CB0717 /* asciidag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1CBFF512E69B834FA846D33 /* asciidag.cpp */; };
+		F030EFD96C74B115352DF1CB /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBACAE268ADEB7D383AAC00 /* SyphonNameboundClient.m */; };
 		F22166605E3E7C40C84BD447 /* debugging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40734674AEAE777900A71DE9 /* debugging.cpp */; };
 		F2E01DFA74E3A0826AA4F189 /* networkparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB117E61DFBEA50EF2BDBFF /* networkparser.cpp */; };
 /* End PBXBuildFile section */
@@ -71,6 +77,7 @@
 			files = (
 				77DF55856BFDE64250D28383 /* QtCore.framework in CopyFiles */,
 				A257C1870D5209E6CBA367CF /* VideoToolbox.framework in CopyFiles */,
+				4D508D34156E7076531D9084 /* Syphon.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +117,7 @@
 		123A3FB665BA76416226B844 /* pkcs11.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pkcs11.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls/pkcs11.h; sourceTree = SOURCE_ROOT; };
 		13CB073EABAA36D644573AE3 /* network.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = network.cpp; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/scheduler/network.cpp; sourceTree = SOURCE_ROOT; };
 		14297C2E8145D6F8E30C92E3 /* adts_parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = adts_parser.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec/adts_parser.h; sourceTree = SOURCE_ROOT; };
+		144250309F957F247C908960 /* ofxSyphonServer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphonServer.h; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/src/ofxSyphonServer.h; sourceTree = SOURCE_ROOT; };
 		14497981DBF9506EB5DC719F /* xvmc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = xvmc.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec/xvmc.h; sourceTree = SOURCE_ROOT; };
 		14D5C854A813F62246160FB5 /* avdevice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = avdevice.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavdevice/avdevice.h; sourceTree = SOURCE_ROOT; };
 		14EFE653275B3077A460298F /* id3v2footer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = id3v2footer.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/id3v2footer.h; sourceTree = SOURCE_ROOT; };
@@ -135,6 +143,7 @@
 		1A79FB43997A7A8ECE81ED56 /* classifier.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = classifier.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/classifier.h; sourceTree = SOURCE_ROOT; };
 		1B6ED8CA870918992B628E4D /* streamingalgorithmwrapper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = streamingalgorithmwrapper.cpp; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/streamingalgorithmwrapper.cpp; sourceTree = SOURCE_ROOT; };
 		1C8EB0F38FB9D566CF03AE77 /* jama_cholesky.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jama_cholesky.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt/jama_cholesky.h; sourceTree = SOURCE_ROOT; };
+		1CFB8055DE5121CC82A29B21 /* ofxSyphonServer.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ofxSyphonServer.mm; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/src/ofxSyphonServer.mm; sourceTree = SOURCE_ROOT; };
 		1D08A4914D00AAC2AF5DD675 /* xvid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = xvid.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/include/xvid.h; sourceTree = SOURCE_ROOT; };
 		1E09BDA0855883464F5DFE96 /* vaapi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vaapi.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec/vaapi.h; sourceTree = SOURCE_ROOT; };
 		1E4D1608F640F138CA818E73 /* opus_defines.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = opus_defines.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include/opus/opus_defines.h; sourceTree = SOURCE_ROOT; };
@@ -191,7 +200,6 @@
 		3ECAFE702B9AA9A0141108E9 /* murmur3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = murmur3.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/murmur3.h; sourceTree = SOURCE_ROOT; };
 		3F36A665B431588BAC7E31E4 /* hdr_dynamic_metadata.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hdr_dynamic_metadata.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/hdr_dynamic_metadata.h; sourceTree = SOURCE_ROOT; };
 		3FA153F18B7AFB0199C0696E /* id3v2header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = id3v2header.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/id3v2header.h; sourceTree = SOURCE_ROOT; };
-		403A9A982336D6AD003C6908 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		40648A71F99A9F3060E7A7BB /* buffersrc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = buffersrc.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavfilter/buffersrc.h; sourceTree = SOURCE_ROOT; };
 		40734674AEAE777900A71DE9 /* debugging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = debugging.cpp; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/debugging.cpp; sourceTree = SOURCE_ROOT; };
 		40E90CE510D036526557F10C /* FreesoundSfxDescriptors.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FreesoundSfxDescriptors.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_freesound/FreesoundSfxDescriptors.h; sourceTree = SOURCE_ROOT; };
@@ -250,6 +258,7 @@
 		5BD8A6ECC5BBC9BEB230C88C /* rolling_integral_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = rolling_integral_image.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/utils/rolling_integral_image.h; sourceTree = SOURCE_ROOT; };
 		5C20798EA98A5AAB616D0A39 /* interf_dec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = interf_dec.h; path = "../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrnb/interf_dec.h"; sourceTree = SOURCE_ROOT; };
 		5C4CA618F82AB0EE23346C2D /* codec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = codec.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include/theora/codec.h; sourceTree = SOURCE_ROOT; };
+		5DBACAE268ADEB7D383AAC00 /* SyphonNameboundClient.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = SyphonNameboundClient.m; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.m; sourceTree = SOURCE_ROOT; };
 		5E239CABFA3D40C7D000F9C6 /* vpx_frame_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vpx_frame_buffer.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include/vpx/vpx_frame_buffer.h; sourceTree = SOURCE_ROOT; };
 		5E94F2A09C5AA4C3219DBEBB /* qsv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = qsv.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec/qsv.h; sourceTree = SOURCE_ROOT; };
 		5E9624F33CDE4A355217FC93 /* moving_average.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = moving_average.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/moving_average.h; sourceTree = SOURCE_ROOT; };
@@ -298,6 +307,7 @@
 		74A7E2D7A89178F63A28089B /* fft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fft.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/fft.h; sourceTree = SOURCE_ROOT; };
 		75366A1EB4DD66B03A537BF9 /* tnt_array3d.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tnt_array3d.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt/tnt_array3d.h; sourceTree = SOURCE_ROOT; };
 		7574FE2D793419E91C836D2B /* poolstorage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = poolstorage.cpp; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/algorithms/poolstorage.cpp; sourceTree = SOURCE_ROOT; };
+		75BA5948F6B7824BD7211A6D /* ofxSyphon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphon.h; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/src/ofxSyphon.h; sourceTree = SOURCE_ROOT; };
 		75E2A8772BF8EE4FC4085C8C /* avio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = avio.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavformat/avio.h; sourceTree = SOURCE_ROOT; };
 		780B3DE874EBCE0DA34E581D /* if_rom.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = if_rom.h; path = "../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrwb/if_rom.h"; sourceTree = SOURCE_ROOT; };
 		7819C12AA1443E2FDCA715E5 /* id3v2extendedheader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = id3v2extendedheader.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/id3v2extendedheader.h; sourceTree = SOURCE_ROOT; };
@@ -339,6 +349,7 @@
 		87D37FAC83648779C7E52360 /* theoradec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = theoradec.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include/theora/theoradec.h; sourceTree = SOURCE_ROOT; };
 		87F49395AA79A6668B3C88B3 /* pixelutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pixelutils.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/pixelutils.h; sourceTree = SOURCE_ROOT; };
 		8874B5E9FAD5539B79A9F386 /* sourceproxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sourceproxy.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/sourceproxy.h; sourceTree = SOURCE_ROOT; };
+		8B3BB69528FBF8C30E2355CC /* ofxSyphonServerDirectory.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ofxSyphonServerDirectory.mm; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/src/ofxSyphonServerDirectory.mm; sourceTree = SOURCE_ROOT; };
 		8BAE8ED21A78AF963518E631 /* metadatautils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = metadatautils.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/metadatautils.h; sourceTree = SOURCE_ROOT; };
 		8BCACA420C28D7AEDF5940CA /* taglib_export.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = taglib_export.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/taglib_export.h; sourceTree = SOURCE_ROOT; };
 		8CED7F8C70F0FF0665D9847A /* ffversion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffversion.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/ffversion.h; sourceTree = SOURCE_ROOT; };
@@ -376,6 +387,7 @@
 		9B6095909AF06BA877446AA5 /* silence_remover.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = silence_remover.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/silence_remover.h; sourceTree = SOURCE_ROOT; };
 		9BCAB7D7F64DDDA1BBCD9FA5 /* codec_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = codec_api.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include/wels/codec_api.h; sourceTree = SOURCE_ROOT; };
 		9C593A4AF32172A8A5299142 /* phantombuffer_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = phantombuffer_impl.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/phantombuffer_impl.h; sourceTree = SOURCE_ROOT; };
+		9CAF58248260FA83F964ADDE /* ofxSyphonServerDirectory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphonServerDirectory.h; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/src/ofxSyphonServerDirectory.h; sourceTree = SOURCE_ROOT; };
 		9CB58B311057C029D7F2DA62 /* xtea.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = xtea.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/xtea.h; sourceTree = SOURCE_ROOT; };
 		9CE90A263A76052E9C8EA09D /* FreesoundLowlevelDescriptors.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FreesoundLowlevelDescriptors.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_freesound/FreesoundLowlevelDescriptors.h; sourceTree = SOURCE_ROOT; };
 		9D5F0F3F8450CD37D7C4C015 /* tnt_array2d.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tnt_array2d.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt/tnt_array2d.h; sourceTree = SOURCE_ROOT; };
@@ -454,6 +466,7 @@
 		BA2F54A12550BFCB12DF390E /* tpropertymap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tpropertymap.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/tpropertymap.h; sourceTree = SOURCE_ROOT; };
 		BA920B139AFD82B0F9089910 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/QtCore.framework; sourceTree = "<group>"; };
 		BAC0E01E0A7BDE882332E8A1 /* buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = buffer.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/buffer.h; sourceTree = SOURCE_ROOT; };
+		BAE01CD49B9FA8831C354A0F /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SyphonNameboundClient.h; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
 		BB3497737A74FCB75D43C1D3 /* modfilebase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = modfilebase.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/modfilebase.h; sourceTree = SOURCE_ROOT; };
 		BB4E22221302498DB77FF8AF /* audioproperties.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = audioproperties.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/audioproperties.h; sourceTree = SOURCE_ROOT; };
 		BB738796A201EB2E9C2991FD /* tbytevectorlist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tbytevectorlist.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/tbytevectorlist.h; sourceTree = SOURCE_ROOT; };
@@ -518,9 +531,11 @@
 		D44DC2B62685A23F549084B0 /* dec_if.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dec_if.h; path = "../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrwb/dec_if.h"; sourceTree = SOURCE_ROOT; };
 		D505EB2B4F2E8A3B29D27973 /* version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = version.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswresample/version.h; sourceTree = SOURCE_ROOT; };
 		D58B35E0405CC2D31A262BB8 /* snappy-stubs-public.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "snappy-stubs-public.h"; path = "../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/include/snappy-stubs-public.h"; sourceTree = SOURCE_ROOT; };
+		D58DCB2C0AEFDE6171E29540 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework; sourceTree = "<group>"; };
 		D655556FC0F0E6D8DC2B0565 /* jama_eig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jama_eig.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt/jama_eig.h; sourceTree = SOURCE_ROOT; };
 		D7894B9BD07D355686CC3E57 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxToggle.cpp; path = ../../../of_v0.10.1_osx_release/addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
 		D96D917EE117DD98C05827D3 /* tnt_vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tnt_vec.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt/tnt_vec.h; sourceTree = SOURCE_ROOT; };
+		D9A2F6F50787EA271749BED8 /* ofxSyphonClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphonClient.h; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/src/ofxSyphonClient.h; sourceTree = SOURCE_ROOT; };
 		DAFFB6ACF98BC0AC5AC5F10C /* system-keys.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "system-keys.h"; path = "../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls/system-keys.h"; sourceTree = SOURCE_ROOT; };
 		DB15FE0E66A4898D7C54A7C3 /* popularimeterframe.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = popularimeterframe.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/popularimeterframe.h; sourceTree = SOURCE_ROOT; };
 		DB2ACB41CF2A06A62A42FF1C /* tableofcontentsframe.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tableofcontentsframe.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/tableofcontentsframe.h; sourceTree = SOURCE_ROOT; };
@@ -742,6 +757,7 @@
 		EB8CE3424363E7B0B7E02114 /* hwcontext_mediacodec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hwcontext_mediacodec.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/hwcontext_mediacodec.h; sourceTree = SOURCE_ROOT; };
 		EBCFBF0999C85C443B91972D /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSliderGroup.h; path = ../../../of_v0.10.1_osx_release/addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
 		EC07BC2370CC440118F53168 /* hwcontext_d3d11va.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hwcontext_d3d11va.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/hwcontext_d3d11va.h; sourceTree = SOURCE_ROOT; };
+		EC933811B04037C327EB7DDD /* ofxSyphonClient.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ofxSyphonClient.mm; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/src/ofxSyphonClient.mm; sourceTree = SOURCE_ROOT; };
 		EC9AF0196BF1BA7C72D04D81 /* oggflacfile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = oggflacfile.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/oggflacfile.h; sourceTree = SOURCE_ROOT; };
 		ECDD2070EF4C19A816519C81 /* MersenneTwister.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MersenneTwister.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/MersenneTwister.h; sourceTree = SOURCE_ROOT; };
 		ED7B76AFACE65942D1397436 /* pkcs7.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pkcs7.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls/pkcs7.h; sourceTree = SOURCE_ROOT; };
@@ -784,6 +800,7 @@
 			files = (
 				323D9EFC36EBCBC7D5144431 /* QtCore.framework in Frameworks */,
 				5B31FE298A18780290733229 /* VideoToolbox.framework in Frameworks */,
+				E1A3FD40C8BCD507345F1126 /* Syphon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,6 +948,14 @@
 			name = opus;
 			sourceTree = "<group>";
 		};
+		2317994671CD76BBA16927B8 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				65F3085962B3A8825746C3C2 /* Syphon */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
 		2CE5DE69C2631FE323F37923 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -965,6 +990,14 @@
 				4CA5DA628C464FACF7B63C28 /* include */,
 			);
 			name = lame;
+			sourceTree = "<group>";
+		};
+		398D2AD7D162CE13BF40CD4F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				821159A073ABA066739FD401 /* osx */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 		3A1021999E9B114933321EF2 /* ofxMLTK */ = {
@@ -1044,6 +1077,20 @@
 			name = libavresample;
 			sourceTree = "<group>";
 		};
+		49A9E39C52C2DF4DDA1E185F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				75BA5948F6B7824BD7211A6D /* ofxSyphon.h */,
+				D9A2F6F50787EA271749BED8 /* ofxSyphonClient.h */,
+				EC933811B04037C327EB7DDD /* ofxSyphonClient.mm */,
+				144250309F957F247C908960 /* ofxSyphonServer.h */,
+				1CFB8055DE5121CC82A29B21 /* ofxSyphonServer.mm */,
+				9CAF58248260FA83F964ADDE /* ofxSyphonServerDirectory.h */,
+				8B3BB69528FBF8C30E2355CC /* ofxSyphonServerDirectory.mm */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		4CA5DA628C464FACF7B63C28 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -1081,6 +1128,15 @@
 				2CE5DE69C2631FE323F37923 /* include */,
 			);
 			name = snappy;
+			sourceTree = "<group>";
+		};
+		50EAFB5FF7C5722E7B4895C7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BAE01CD49B9FA8831C354A0F /* SyphonNameboundClient.h */,
+				5DBACAE268ADEB7D383AAC00 /* SyphonNameboundClient.m */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 		53A60CEBE60930807FDE466D /* libavformat */ = {
@@ -1198,6 +1254,15 @@
 			name = fftw3f;
 			sourceTree = "<group>";
 		};
+		65F3085962B3A8825746C3C2 /* Syphon */ = {
+			isa = PBXGroup;
+			children = (
+				50EAFB5FF7C5722E7B4895C7 /* src */,
+				398D2AD7D162CE13BF40CD4F /* lib */,
+			);
+			name = Syphon;
+			sourceTree = "<group>";
+		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1270,6 +1335,15 @@
 			name = include;
 			sourceTree = "<group>";
 		};
+		7F3C04577424427D348B1425 /* ofxSyphon */ = {
+			isa = PBXGroup;
+			children = (
+				2317994671CD76BBA16927B8 /* libs */,
+				49A9E39C52C2DF4DDA1E185F /* src */,
+			);
+			name = ofxSyphon;
+			sourceTree = "<group>";
+		};
 		7FC24A498591D557ECBFBCDE /* chromaprint */ = {
 			isa = PBXGroup;
 			children = (
@@ -1284,6 +1358,14 @@
 				CFAE82D59566E5BF4442E4D9 /* include */,
 			);
 			name = x264;
+			sourceTree = "<group>";
+		};
+		821159A073ABA066739FD401 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				D58DCB2C0AEFDE6171E29540 /* Syphon.framework */,
+			);
+			name = osx;
 			sourceTree = "<group>";
 		};
 		83C89E91C3EB7543F59234A0 /* include */ = {
@@ -1523,6 +1605,7 @@
 			children = (
 				480A780D8D0308AE4A368801 /* ofxGui */,
 				3A1021999E9B114933321EF2 /* ofxMLTK */,
+				7F3C04577424427D348B1425 /* ofxSyphon */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -2200,7 +2283,6 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				403A9A982336D6AD003C6908 /* .gitignore */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -2485,6 +2567,10 @@
 				015DCDDD305649985E9E9A1D /* synth_utils.cpp in Sources */,
 				E33C6898F442AB574089745D /* yamlast.cpp in Sources */,
 				032BED7F066925C51F82DA01 /* ofxMLTK.cpp in Sources */,
+				F030EFD96C74B115352DF1CB /* SyphonNameboundClient.m in Sources */,
+				6B1931B9B37F8848BB311D2D /* ofxSyphonClient.mm in Sources */,
+				208966409696756BEA57390F /* ofxSyphonServer.mm in Sources */,
+				5A52A19F20AB836365879562 /* ofxSyphonServerDirectory.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2515,177 +2601,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
-					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/audio,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/avresample,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/cmd,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/utils,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/scheduler,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/algorithms,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_freesound,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_music,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavdevice,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavfilter,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavformat,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavresample,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswresample,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswscale,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include/lame,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include/ogg,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include/vorbis,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include/vpx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib/osx,
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrnb",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrwb",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib/osx",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include/wels,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include/opus,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include/speex,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include/theora,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib/osx,
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/include",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib/osx",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-D__MACOSX_CORE__",
-					"-mtune=native",
-				);
-				SDKROOT = macosx;
-			};
-			name = AppStore;
-		};
-		99FA3DBC1C7456C400CFA0EE /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_MODEL_TUNING = NONE;
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "APPSTORE=1";
-				HEADER_SEARCH_PATHS = (
-					"$(OF_CORE_HEADERS)",
 					src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
@@ -2831,6 +2746,192 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = AppStore;
+		};
+		99FA3DBC1C7456C400CFA0EE /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "APPSTORE=1";
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					src,
+					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/audio,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/avresample,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/cmd,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/utils,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/scheduler,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/algorithms,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_freesound,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_music,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavdevice,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavfilter,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavformat,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavresample,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswresample,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswscale,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include/lame,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include/ogg,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include/vorbis,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include/vpx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib/osx,
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrnb",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrwb",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib/osx",
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include/wels,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include/opus,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include/speex,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include/theora,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib/osx,
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/include",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib/osx",
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/src,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -2964,6 +3065,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
@@ -3108,6 +3210,12 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3142,177 +3250,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
-					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/audio,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/avresample,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/cmd,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/utils,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/scheduler,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/algorithms,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_freesound,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_music,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavdevice,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavfilter,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavformat,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavresample,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswresample,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswscale,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include/lame,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include/ogg,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include/vorbis,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include/vpx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib/osx,
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrnb",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrwb",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib/osx",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include/wels,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include/opus,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include/speex,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include/theora,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib/osx,
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/include",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib",
-					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib/osx",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/include,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib/osx,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-D__MACOSX_CORE__",
-					"-mtune=native",
-				);
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		E4B69B600A3A1757003C02F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_MODEL_TUNING = NONE;
-				HEADER_SEARCH_PATHS = (
-					"$(OF_CORE_HEADERS)",
 					src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
@@ -3458,6 +3395,192 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					src,
+					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/audio,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/avresample,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/cmd,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/include/utils,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/scheduler,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/algorithms,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_freesound,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_music,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavcodec,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavdevice,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavfilter,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavformat,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavresample,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswresample,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libswscale,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/include/lame,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/lame/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libgme/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libiconv/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/include/ogg,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libogg/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libsamplerate/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/include/vorbis,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvorbis/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/include/vpx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libvpx/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/libyaml/lib/osx,
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrnb",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/include/opencore-amrwb",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opencore-amr/lib/osx",
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/include/wels,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/openh264/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/include/opus,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/opus/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/snappy/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/sndfile/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/include/speex,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/speex/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/include/theora,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/theora/lib/osx,
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/include",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib",
+					"../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/two-lame/lib/osx",
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x265/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xvid/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/include,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/xz/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/src,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -3579,11 +3702,13 @@
 					"$(inherited)",
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
@@ -3729,6 +3854,12 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework/Headers,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework/Headers,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../../of_v0.10.1_osx_release/addons/ofxSyphon/src,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
