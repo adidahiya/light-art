@@ -152,10 +152,9 @@ void ofApp::draw(){
 
 //-----
 void ofApp::audioIn(ofSoundBuffer &inBuffer){
-  inBuffer.getChannel(mltk.ch1Buffer, 0);
-  inBuffer.getChannel(mltk.ch2Buffer, 1);
-  inBuffer.getChannel(mltk.ch3Buffer, 2);
-  inBuffer.getChannel(mltk.ch4Buffer, 3);
+  for (int i = 0; i < numberOfInputChannels; i++) {
+    inBuffer.getChannel(mltk.channelSoundBuffers[i], i);
+  }
 }
 
 //--------------------------------------------------------------
