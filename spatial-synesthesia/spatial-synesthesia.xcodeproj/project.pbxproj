@@ -439,7 +439,7 @@
 		AEEF8B3C8DD668268AA3050A /* types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = types.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/types.h; sourceTree = SOURCE_ROOT; };
 		AF1071642CA455F4F219764F /* MusicDescriptorsSet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MusicDescriptorsSet.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/extractor_music/MusicDescriptorsSet.h; sourceTree = SOURCE_ROOT; };
 		AF7D0486CD2D68E0D9197FAA /* iotypewrappers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iotypewrappers.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/iotypewrappers.h; sourceTree = SOURCE_ROOT; };
-		AFBE6BEC48579CBFC2F463E3 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/VideoToolbox.framework; sourceTree = "<group>"; };
+		AFBE6BEC48579CBFC2F463E3 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/VideoToolbox.framework; sourceTree = "<group>"; };
 		B002CDC4F6850DFC16199830 /* ofxColorPicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxColorPicker.h; path = ../../../of_v0.10.1_osx_release/addons/ofxGui/src/ofxColorPicker.h; sourceTree = SOURCE_ROOT; };
 		B03A3E334301401B8C5A0AAE /* algorithm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = algorithm.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/algorithm.h; sourceTree = SOURCE_ROOT; };
 		B06242BE1450860EBCB81F3A /* hwcontext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hwcontext.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/hwcontext.h; sourceTree = SOURCE_ROOT; };
@@ -464,7 +464,7 @@
 		B8F7FE89A131A3CC8FE01527 /* x264_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x264_config.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/x264/include/x264_config.h; sourceTree = SOURCE_ROOT; };
 		B9A8A189B943EB61E04B88C3 /* tlist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tlist.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/tlist.h; sourceTree = SOURCE_ROOT; };
 		BA2F54A12550BFCB12DF390E /* tpropertymap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tpropertymap.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/tpropertymap.h; sourceTree = SOURCE_ROOT; };
-		BA920B139AFD82B0F9089910 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/QtCore.framework; sourceTree = "<group>"; };
+		BA920B139AFD82B0F9089910 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks/QtCore.framework; sourceTree = "<group>"; };
 		BAC0E01E0A7BDE882332E8A1 /* buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = buffer.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/buffer.h; sourceTree = SOURCE_ROOT; };
 		BAE01CD49B9FA8831C354A0F /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SyphonNameboundClient.h; path = ../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
 		BB3497737A74FCB75D43C1D3 /* modfilebase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = modfilebase.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/modfilebase.h; sourceTree = SOURCE_ROOT; };
@@ -1368,6 +1368,15 @@
 			name = osx;
 			sourceTree = "<group>";
 		};
+		83711B4CF1E5D266281F9419 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA920B139AFD82B0F9089910 /* QtCore.framework */,
+				AFBE6BEC48579CBFC2F463E3 /* VideoToolbox.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 		83C89E91C3EB7543F59234A0 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -1992,8 +2001,7 @@
 				AAD7524A8BF0C2309F2F1B54 /* x265 */,
 				329B4AF427D319BE746DA4F9 /* xvid */,
 				946456B4FE8F1947F2B22951 /* xz */,
-				BA920B139AFD82B0F9089910 /* QtCore.framework */,
-				AFBE6BEC48579CBFC2F463E3 /* VideoToolbox.framework */,
+				83711B4CF1E5D266281F9419 /* frameworks */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -2640,6 +2648,7 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
@@ -2771,8 +2780,8 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -2820,6 +2829,7 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
@@ -3104,6 +3114,7 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
@@ -3289,6 +3300,7 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
@@ -3420,8 +3432,8 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3469,6 +3481,7 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
@@ -3700,8 +3713,8 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
-					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -3748,6 +3761,7 @@
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/include,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/fftw3f/lib/osx,
+					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/frameworks,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gaia/lib/osx,
