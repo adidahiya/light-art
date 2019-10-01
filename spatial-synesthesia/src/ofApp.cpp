@@ -81,11 +81,11 @@ void ofApp::update(){
 void ofApp::draw(){
   ofBackground(0);
   
-  Real rms = mltk.getValue("RMS");
-  vector<Real> mfcc_bands = mltk.getData("MFCC.bands");
-  vector<Real> mfcc_coefs = mltk.getData("MFCC.coefs");
-  vector<Real> spectrum = mltk.getData("Spectrum");
-  vector<Real> hpcp = mltk.getData("HPCP");
+  Real rms = mltk.getValue("RMS", activeChannel);
+  vector<Real> mfcc_bands = mltk.getData("MFCC.bands", activeChannel);
+  vector<Real> mfcc_coefs = mltk.getData("MFCC.coefs", activeChannel);
+  vector<Real> spectrum = mltk.getData("Spectrum", activeChannel);
+  vector<Real> hpcp = mltk.getData("HPCP", activeChannel);
   
   // We figure out the width of the buckets by just dividing the screen width
   // by the number of values in our frame
@@ -171,6 +171,21 @@ void ofApp::keyPressed(int key){
       break;
     case 'h':
       showHpcp = !showHpcp;
+      break;
+    case 'q':
+      activeChannel = -1;
+      break;
+    case 'w':
+      activeChannel = 0;
+      break;
+    case 'e':
+      activeChannel = 1;
+      break;
+    case 'r':
+      activeChannel = 2;
+      break;
+    case 't':
+      activeChannel = 3;
       break;
   }
 }

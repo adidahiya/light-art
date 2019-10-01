@@ -15,8 +15,11 @@ public:
   bool showBands = true;
   bool showCoefs = true;
   bool showHpcp = false;
+  // -1 = mono aggregate
+  int activeChannel = -1;
   
   int numberOfOutputChannels = 0;
+  // should match the same variable in ofMLTK.h
   int numberOfInputChannels = 4;
   int sampleRate = 44100;
   int frameSize = 1024;
