@@ -43,6 +43,7 @@
 		89A43F453F114A79880F426A /* streamingalgorithmcomposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD0147107B8C6BB6807194E8 /* streamingalgorithmcomposite.cpp */; };
 		8C6ECC8FD52102A35A2F7663 /* accumulatoralgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C13A835237D0EC8A9B58CC /* accumulatoralgorithm.cpp */; };
 		8E6E63556F43FFC26FBEDD86 /* sourcebase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F06F4268FFE58EFD39155C0 /* sourcebase.cpp */; };
+		9E1138C53B1C33C9A0B395F1 /* easing_terms_of_use.html in Sources */ = {isa = PBXBuildFile; fileRef = ADCA1687F2CD567A2E924B98 /* easing_terms_of_use.html */; };
 		A0A9B91118A61C63CF6424F6 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61CDB71972B406E6ACD0C50A /* ofxGuiGroup.cpp */; };
 		A257C1870D5209E6CBA367CF /* VideoToolbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFBE6BEC48579CBFC2F463E3 /* VideoToolbox.framework */; };
 		B1DDCE9A7E05FAA4718023C7 /* ringbuffervectoroutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1B22A5E272BA0B2A8677DB8 /* ringbuffervectoroutput.cpp */; };
@@ -401,6 +402,7 @@
 		A061771DCA4ACE65F15A1F35 /* timecode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = timecode.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/timecode.h; sourceTree = SOURCE_ROOT; };
 		A0988FA0C633DB9DE6907370 /* tbytevector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tbytevector.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/tbytevector.h; sourceTree = SOURCE_ROOT; };
 		A2324219F8BC86622E585773 /* mpcproperties.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mpcproperties.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/mpcproperties.h; sourceTree = SOURCE_ROOT; };
+		A260D15DE70F66EBDED0CAEA /* ofxEasing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxEasing.h; path = ../../../of_v0.10.1_osx_release/addons/ofxEasing/src/ofxEasing.h; sourceTree = SOURCE_ROOT; };
 		A27B0CAEC186CFC3F1F1DF4F /* tnt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tnt.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/utils/tnt/tnt.h; sourceTree = SOURCE_ROOT; };
 		A2917EA19C14E119A43871C9 /* wavproperties.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wavproperties.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/wavproperties.h; sourceTree = SOURCE_ROOT; };
 		A29E8A9D2E058225E24AD684 /* intreadwrite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = intreadwrite.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/intreadwrite.h; sourceTree = SOURCE_ROOT; };
@@ -434,6 +436,7 @@
 		AD1E53DE798A775A77526C77 /* ownershipframe.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ownershipframe.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/taglib/include/taglib/ownershipframe.h; sourceTree = SOURCE_ROOT; };
 		AD67E2154DECFBD99EA04E40 /* compat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = compat.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/gnutls/include/gnutls/compat.h; sourceTree = SOURCE_ROOT; };
 		AD7FCED2062457663EFC95ED /* ringbufferinput.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ringbufferinput.cpp; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/streaming/algorithms/ringbufferinput.cpp; sourceTree = SOURCE_ROOT; };
+		ADCA1687F2CD567A2E924B98 /* easing_terms_of_use.html */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = easing_terms_of_use.html; path = ../../../of_v0.10.1_osx_release/addons/ofxEasing/src/easing_terms_of_use.html; sourceTree = SOURCE_ROOT; };
 		ADFB63414247D7738298377E /* hwcontext_vaapi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hwcontext_vaapi.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/ffmpeg/include/libavutil/hwcontext_vaapi.h; sourceTree = SOURCE_ROOT; };
 		AE911D203BE2AA94888CAB52 /* essentiautil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = essentiautil.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/essentiautil.h; sourceTree = SOURCE_ROOT; };
 		AEEF8B3C8DD668268AA3050A /* types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = types.h; path = ../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/essentia/include/essentia/types.h; sourceTree = SOURCE_ROOT; };
@@ -878,6 +881,14 @@
 				0F13386878FA937DA672A727 /* ffmpeg_audio_reader.h */,
 			);
 			name = audio;
+			sourceTree = "<group>";
+		};
+		0D0595A62FF5ED8D37029107 /* ofxEasing */ = {
+			isa = PBXGroup;
+			children = (
+				E78F8991E56DEF594815BB53 /* src */,
+			);
+			name = ofxEasing;
 			sourceTree = "<group>";
 		};
 		0F2574E6DA523F58B40812EC /* include */ = {
@@ -1612,6 +1623,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				0D0595A62FF5ED8D37029107 /* ofxEasing */,
 				480A780D8D0308AE4A368801 /* ofxGui */,
 				3A1021999E9B114933321EF2 /* ofxMLTK */,
 				7F3C04577424427D348B1425 /* ofxSyphon */,
@@ -2328,6 +2340,15 @@
 			name = extractor_freesound;
 			sourceTree = "<group>";
 		};
+		E78F8991E56DEF594815BB53 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				ADCA1687F2CD567A2E924B98 /* easing_terms_of_use.html */,
+				A260D15DE70F66EBDED0CAEA /* ofxEasing.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		E9ADE0F5AE7C667843B03D55 /* theora */ = {
 			isa = PBXGroup;
 			children = (
@@ -2528,6 +2549,7 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				9E1138C53B1C33C9A0B395F1 /* easing_terms_of_use.html in Sources */,
 				22EA8956062BFBF5CCE2A556 /* ofxBaseGui.cpp in Sources */,
 				CC6AE43FBB8E56B055F7685D /* ofxButton.cpp in Sources */,
 				3A26C1F83FB3D1E6F1C4219E /* ofxColorPicker.cpp in Sources */,
@@ -2610,6 +2632,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src,
+					../../../of_v0.10.1_osx_release/addons/ofxEasing/src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
@@ -2791,6 +2814,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src,
+					../../../of_v0.10.1_osx_release/addons/ofxEasing/src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
@@ -3076,6 +3100,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src,
+					../../../of_v0.10.1_osx_release/addons/ofxEasing/src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
@@ -3262,6 +3287,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src,
+					../../../of_v0.10.1_osx_release/addons/ofxEasing/src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
@@ -3443,6 +3469,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src,
+					../../../of_v0.10.1_osx_release/addons/ofxEasing/src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
@@ -3723,6 +3750,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					src,
+					../../../of_v0.10.1_osx_release/addons/ofxEasing/src,
 					../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs,
 					../../../of_v0.10.1_osx_release/addons/ofxMLTK/libs/chromaprint,
