@@ -28,10 +28,7 @@ void ofApp::setup(){
   gui.setup("Press 'd' to toggle.");
   
   gui.add(showFps.set("Show Framerate In Title", true));
-  gui.add(graphColor.set("Graph Color", ofColor(240,240,255)));
-//  gui.add(coefsNoveltyFactor.set("MFCC Coefs Novelty Factor", 4.0, 0.0001, 8.0));
   gui.add(bandsNoveltyFactor.set("MFCC Bands Novelty Factor", 1.0, 0.0001, 1.0));
-  gui.add(hpcpNoveltyFactor.set("HPCP Novelty Factor", 1.0, 0.0001, 1.0));
   
   mainOutputSyphonServer.setName("Screen Output");
   individualTextureSyphonServer.setName("Texture Output");
@@ -55,34 +52,39 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
   ofBackground(0);
-  
-  Real rms = mltk.getValue("RMS", activeChannel);
-  vector<Real> mfcc_bands = mltk.getData("MFCC.bands", activeChannel);
-  vector<Real> spectrum = mltk.getData("Spectrum", activeChannel);
-  
-  // We figure out the width of the buckets by just dividing the screen width
-  // by the number of values in our frame
-  float spectrumBucketWidth = (ofGetWidth() / float(spectrum.size()));
-  float mfccBandWidth = (ofGetWidth() / float(mfcc_bands.size()));
 
-  ofSetColor(graphColor.get());
+  int windowWidth = ofGetWidth();
+  int windowHeight = ofGetHeight();
+  float bucketWidth = windowWidth / numberOfInputChannels;
 
-  if (showBands) {
-    for (int i = 0; i < mfcc_bands.size(); i++) {
-      ofDrawRectangle(i * mfccBandWidth,
-                      ofGetHeight(),
-                      mfccBandWidth,
-                      -ofMap(mfcc_bands[i]/rms, 0, 1.0, 0, ofGetHeight(), true) * bandsNoveltyFactor.get());
+  for (int i = 0; i < numberOfInputChannels; i++) {
+    ofNoFill();
+    ofSetColor(255, 255, 255);
+    ofDrawRectangle(i * bucketWidth, 0, bucketWidth, windowHeight);
+    ofFill();
+    
+    Real rms = mltk.getValue("RMS", i);
+    vector<Real> mfcc_bands = mltk.getData("MFCC.bands", i);
+    vector<Real> spectrum = mltk.getData("Spectrum", i);
+    float bucketX = i * bucketWidth;
+    float bucketHeight = windowHeight / mfcc_bands.size();
+
+    for (int j = 0; j < mfcc_bands.size(); j++) {
+      float bucketY = j * bucketHeight;
+      ofColor channelBucketColor = ofColor();
+      float hue = ofMap(j, 0, mfcc_bands.size(), 0, 255, true);
+      float brightness = ofMap(mfcc_bands[j]/rms * 10, 0, 1.0, 0, 255, true);
+      channelBucketColor.setHsb(hue, 200, brightness);
+      ofSetColor(channelBucketColor);
+      ofDrawRectangle(bucketX, bucketY, bucketWidth - 1, bucketHeight);
     }
   }
-
 
   // Syphon Stuff
   
   mClient.draw(50, 50);
   mainOutputSyphonServer.publishScreen();
 
-  
   if (showGui) {
     gui.draw();
   }
