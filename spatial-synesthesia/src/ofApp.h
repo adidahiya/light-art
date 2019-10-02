@@ -24,6 +24,7 @@ public:
   int sampleRate = 44100;
   int frameSize = 1024;
   int numberOfBuffers = 4;
+  int numPixelsPerChannel = 60;
   
   ofColor backgroundColor;
   ofMutex mutex;
@@ -32,26 +33,21 @@ public:
   Pool aggrPool;
 
   ofxPanel gui;
-
   ofParameter<bool> showFps;
-  ofParameter<ofColor> graphColor;
-  ofParameter<float> coefsNoveltyFactor;
   ofParameter<float> bandsNoveltyFactor;
-  ofParameter<float> hpcpNoveltyFactor;
-  
+  ofParameter<float> brightnessFactor;
+
   ofSoundStream soundStream;
-  
+
+  // pixel strip colors for each channel
+  vector<deque<ofColor>> pixelColors;
+
   void audioIn(ofSoundBuffer &inBuffer);
 
   ofTexture tex;
   ofxSyphonServer mainOutputSyphonServer;
   ofxSyphonServer individualTextureSyphonServer;
   ofxSyphonClient mClient;
-
-//  DmxDevice* dmxInterface;
-//  unsigned char dmxData[DMX_DATA_LENGTH];
-//  float red, green, blue;
-//  void setColorsToSend();
   
   // These are the built-ins
   void setup();
@@ -70,4 +66,9 @@ public:
   void windowResized(int w, int h);
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
+  
+private:
+  void fillPixelColorsFromIncomingAudio();
+  void drawPixelColors();
+  void drawLiveMFCCBands();
 };
