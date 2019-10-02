@@ -5,7 +5,7 @@
 #include "ofxGui.h"
 #include "ofxMLTK.h"
 #include "ofxSyphon.h"
-//#include "ofxGenericDmx.h"
+#include "ofxEasing.h"
 
 #define DMX_DATA_LENGTH 196
 
@@ -18,14 +18,16 @@ public:
   // -1 = mono aggregate
   int activeChannel = -1;
   
-  int numberOfOutputChannels = 0;
+  int numberOfOutputChannels = 2;
   // should match the same variable in ofMLTK.h
   int numberOfInputChannels = 4;
   int sampleRate = 44100;
   int frameSize = 1024;
   int numberOfBuffers = 4;
   int numPixelsPerChannel = 60;
-  
+  // changing this controls the "speed" of the pixel animation
+  int numFramesPerPixel = 4;
+
   ofColor backgroundColor;
   ofMutex mutex;
   MLTK mltk;
@@ -41,8 +43,12 @@ public:
 
   // pixel strip colors for each channel
   vector<deque<ofColor>> pixelColors;
+  
+  // for each pixel, we accumulate some # of frames which are averaged together to get the final pixel value
+  vector<vector<ofColor>> currentPixelFrames;
 
   void audioIn(ofSoundBuffer &inBuffer);
+  void audioOut(ofSoundBuffer &outBuffer);
 
   ofTexture tex;
   ofxSyphonServer mainOutputSyphonServer;
@@ -68,6 +74,9 @@ public:
   void gotMessage(ofMessage msg);
   
 private:
+  bool hasTimelineReachedEnd = false;
+  // flush these to audioOut() once hasTimelineReachedEnd == true
+  queue<ofSoundBuffer> delayedOutputBuffers;
   void fillPixelColorsFromIncomingAudio();
   void drawPixelColors();
   void drawLiveMFCCBands();

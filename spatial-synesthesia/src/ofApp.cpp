@@ -20,6 +20,10 @@ void ofApp::setup(){
   mltk.run();
 
   pixelColors.resize(numberOfInputChannels);
+  for (int i = 0; i < numberOfInputChannels; i++) {
+    pixelColors[i].assign(numPixelsPerChannel, ofColor::black);
+  }
+  currentPixelFrames.resize(numberOfInputChannels);
   
   // set up aggregation
   const char *stats[4] = { "mean", "var", "min", "max" };
@@ -50,13 +54,16 @@ void ofApp::update(){
   }
 
   mltk.run();
+  fillPixelColorsFromIncomingAudio();
+  // hack, confusing logic
+  if (ofGetFrameNum() > numFramesPerPixel * numPixelsPerChannel) {
+    hasTimelineReachedEnd = true;
+  }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
   ofBackground(0);
-
-  fillPixelColorsFromIncomingAudio();
   
   drawPixelColors();
 
@@ -70,34 +77,36 @@ void ofApp::draw(){
 }
 
 void ofApp::fillPixelColorsFromIncomingAudio() {
-  if (ofGetFrameNum() % 4 > 0) {
-    return;
-  }
-  
   for (int i = 0; i < numberOfInputChannels; i++) {
     Real rms = mltk.getValue("RMS", i);
     vector<Real> mfcc_bands = mltk.getData("MFCC.bands", i);
 
-    ofColor newPixelColor = ofColor();
-    newPixelColor.setHsb(0, 0, 0);
+    ofColor framePixelColor = ofColor();
+    framePixelColor.setHsb(0, 0, 0);
     for (int j = 0; j < mfcc_bands.size(); j++) {
       ofColor contributingBandColor = ofColor();
-      float hue = ofMap(j, 0, mfcc_bands.size(), 0, 255, true);
+      float hue = ofxeasing::map(j, 0, mfcc_bands.size(), 0, 255, ofxeasing::linear::easeOut);
       float brightness = ofMap(mfcc_bands[j]/rms, 0, 1.0, 0, 40 * brightnessFactor.get(), true);
       contributingBandColor.setHsb(hue, 240, brightness);
-      newPixelColor += contributingBandColor;
+      framePixelColor += contributingBandColor;
     }
-//    ofColor red = ofColor();
-//    red.setHsb(10, 100, 10);
-//    ofColor blue = ofColor();
-//    blue.setHsb(100, 100, 10);
-//    newPixelColor += red;
-//    newPixelColor += blue;
 
-    pixelColors[i].push_front(newPixelColor);
-    
-    if (pixelColors[i].size() > numPixelsPerChannel) {
-      pixelColors[i].resize(numPixelsPerChannel);
+
+    if (currentPixelFrames[i].size() < numFramesPerPixel) {
+      currentPixelFrames[i].push_back(framePixelColor);
+    } else {
+      ofColor newPixelColor = ofColor();
+      for (int k = 0; k < numFramesPerPixel; k++) {
+        newPixelColor += currentPixelFrames[i][k];
+      }
+      // commit new pixel to the timeline
+      pixelColors[i].push_front(framePixelColor);
+      if (pixelColors[i].size() > numPixelsPerChannel) {
+        pixelColors[i].resize(numPixelsPerChannel);
+      }
+      
+      // clear out our "buffer" of frames for the current pixel
+      currentPixelFrames[i].resize(0);
     }
   }
 }
@@ -148,9 +157,24 @@ void ofApp::drawLiveMFCCBands() {
 
 
 //-----
-void ofApp::audioIn(ofSoundBuffer &inBuffer){
+void ofApp::audioIn(ofSoundBuffer &inBuffer) {
   for (int i = 0; i < numberOfInputChannels; i++) {
+    // send to MLTK for analysis
     inBuffer.getChannel(mltk.channelSoundBuffers[i], i);
+  }
+
+  // save for audio output later
+  ofSoundBuffer inBufferCopy = ofSoundBuffer();
+  inBufferCopy.allocate(sampleRate, numberOfInputChannels);
+  inBuffer.copyTo(inBufferCopy);
+  delayedOutputBuffers.push(inBufferCopy);
+}
+
+void ofApp::audioOut(ofSoundBuffer &outBuffer) {
+  if (hasTimelineReachedEnd) {
+    ofSoundBuffer& bufferToFlush = delayedOutputBuffers.front();
+    bufferToFlush.copyTo(outBuffer);
+    delayedOutputBuffers.pop();
   }
 }
 
