@@ -29,52 +29,27 @@ void ofApp::setup(){
   
   gui.add(showFps.set("Show Framerate In Title", true));
   gui.add(graphColor.set("Graph Color", ofColor(240,240,255)));
-  gui.add(coefsNoveltyFactor.set("MFCC Coefs Novelty Factor", 4.0, 0.0001, 8.0));
+//  gui.add(coefsNoveltyFactor.set("MFCC Coefs Novelty Factor", 4.0, 0.0001, 8.0));
   gui.add(bandsNoveltyFactor.set("MFCC Bands Novelty Factor", 1.0, 0.0001, 1.0));
   gui.add(hpcpNoveltyFactor.set("HPCP Novelty Factor", 1.0, 0.0001, 1.0));
   
   mainOutputSyphonServer.setName("Screen Output");
   individualTextureSyphonServer.setName("Texture Output");
   mClient.setup();
-  //using Syphon app Simple Server, found at http://syphon.v002.info/
+  // using Syphon app Simple Server, found at http://syphon.v002.info/
   mClient.set("","Simple Server");
 //  tex.allocate(200, 100, GL_RGBA);
   ofSetFrameRate(60);
-
-//  memset(dmxData, 0, DMX_DATA_LENGTH);
-//  dmxInterface = ofxGenericDmx::createDevice(DmxDevice::DMX_DEVICE_RAW);
-//  bool opened = dmxInterface->open();
-//  if (dmxInterface == 0 || !opened) {
-//    ofLog(OF_LOG_WARNING, "No FTDI Device Found\n" );
-//  } else {
-//    ofLog(OF_LOG_NOTICE, "isOpen: %i\n", dmxInterface->isOpen());
-//  }
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-  // This will show us the framerate in the window's title bar
-  if(showFps.get()){
+  // show framerate in window title bar
+  if (showFps.get()) {
     ofSetWindowTitle("Spatial Synesthesia - " + to_string(ofGetFrameRate()));
   }
-  
-  // this runs the analysis chain that's been declared inside ofxMLTK
+
   mltk.run();
-//
-//  setColorsToSend();
-//
-//  dmxData[1] = int(red);
-//  dmxData[2] = int(green);
-//  dmxData[3] = int(blue);
-//  // force first byte to zero (it is not a channel but DMX type info - start code)
-//  dmxData[0] = 0;
-//
-//  if (!dmxInterface || !dmxInterface->isOpen()) {
-//    // noop
-//  } else {
-//    //send the data to the dmx interface
-//    dmxInterface->writeDmx(dmxData, DMX_DATA_LENGTH);
-//  }
 }
 
 //--------------------------------------------------------------
@@ -83,16 +58,12 @@ void ofApp::draw(){
   
   Real rms = mltk.getValue("RMS", activeChannel);
   vector<Real> mfcc_bands = mltk.getData("MFCC.bands", activeChannel);
-  vector<Real> mfcc_coefs = mltk.getData("MFCC.coefs", activeChannel);
   vector<Real> spectrum = mltk.getData("Spectrum", activeChannel);
-  vector<Real> hpcp = mltk.getData("HPCP", activeChannel);
   
   // We figure out the width of the buckets by just dividing the screen width
   // by the number of values in our frame
   float spectrumBucketWidth = (ofGetWidth() / float(spectrum.size()));
   float mfccBandWidth = (ofGetWidth() / float(mfcc_bands.size()));
-  float mfccCoefsWidth = (ofGetWidth() / float(mfcc_coefs.size()));
-  float hpcpBandWidth = (ofGetWidth() / float(hpcp.size()));
 
   ofSetColor(graphColor.get());
 
@@ -102,31 +73,6 @@ void ofApp::draw(){
                       ofGetHeight(),
                       mfccBandWidth,
                       -ofMap(mfcc_bands[i]/rms, 0, 1.0, 0, ofGetHeight(), true) * bandsNoveltyFactor.get());
-    }
-  }
-
-  ofPolyline line;
-
-  ofSetLineWidth(6);
-  for (int i = 0; i < mfcc_coefs.size(); i++) {
-    line.lineTo(i * mfccCoefsWidth,
-                ofGetHeight()/2 + ((mfcc_coefs[i]) * coefsNoveltyFactor.get()));
-  }
-  line.lineTo(ofGetWidth(), ofGetHeight()/2);
-  if (showCoefs) {
-    line.draw();
-  }
-
-  
-  
-  
-  
-  if (showHpcp) {
-    for (int i = 0; i < hpcp.size(); i++) {
-      ofDrawRectangle(i * hpcpBandWidth,
-                      ofGetHeight(),
-                      hpcpBandWidth,
-                      -ofMap(hpcp[i], 0, 1.0, 0, ofGetHeight(), true) * hpcpNoveltyFactor.get());
     }
   }
 
@@ -143,12 +89,6 @@ void ofApp::draw(){
 }
 
 
-//void ofApp::setColorsToSend() {
-//  red = 0;
-//  green = 100;
-//  blue = 50;
-//}
-
 
 //-----
 void ofApp::audioIn(ofSoundBuffer &inBuffer){
@@ -162,15 +102,6 @@ void ofApp::keyPressed(int key){
   switch(key){
     case 'd':
       showGui = !showGui;
-      break;
-    case 'b':
-      showBands = !showBands;
-      break;
-    case 'c':
-      showCoefs = !showCoefs;
-      break;
-    case 'h':
-      showHpcp = !showHpcp;
       break;
     case 'q':
       activeChannel = -1;
@@ -240,13 +171,5 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 //--------------------------------------------------------------
 void ofApp::exit() {
-//  if (dmxInterface && dmxInterface->isOpen()) {
-//    // send all zeros (black) to every dmx channel and close!
-//    for (int i = 0; i <= DMX_DATA_LENGTH; i++) {
-//      dmxData[i] = 0;
-//    }
-//
-//    dmxInterface->writeDmx(dmxData, DMX_DATA_LENGTH);
-//    dmxInterface->close();
-//  }
+
 }
