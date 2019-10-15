@@ -7,8 +7,6 @@
 #include "ofxSyphon.h"
 #include "ofxEasing.h"
 
-#define DMX_DATA_LENGTH 196
-
 class ofApp : public ofBaseApp {
 public:
   bool showGui = true;
@@ -18,15 +16,15 @@ public:
   // -1 = mono aggregate
   int activeChannel = -1;
   
-  int numberOfOutputChannels = 2;
+  int numberOfOutputChannels = 0;
   // should match the same variable in ofMLTK.h
-  int numberOfInputChannels = 4;
+  int numberOfInputChannels = 1;
   int sampleRate = 44100;
   int frameSize = 1024;
   int numberOfBuffers = 4;
   int numPixelsPerChannel = 60;
   // changing this controls the "speed" of the pixel animation
-  int numFramesPerPixel = 4;
+  int numFramesPerPixel = 3;
 
   ofColor backgroundColor;
   ofMutex mutex;
