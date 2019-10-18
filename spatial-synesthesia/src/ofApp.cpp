@@ -84,13 +84,13 @@ void ofApp::fillPixelColorsFromIncomingAudio() {
     vector<Real> mfcc_bands = mltk.getMeanData("MFCC.bands", i);
     tuple<float, float> mfcc_normalized_range = make_tuple(0, 1.0);
 
-    // GFCC
-    vector<Real> gfcc_bands = mltk.getMeanData("GFCC.bands", i);
-    tuple<float, float> gfcc_normalized_range = make_tuple(0, 1.0);
-
-    // BFCC
-    vector<Real> bfcc_bands = mltk.getMeanData("BFCC.bands", i);
-    tuple<float, float> bfcc_normalized_range = make_tuple(0, 1.0);
+//    // GFCC
+//    vector<Real> gfcc_bands = mltk.getMeanData("GFCC.bands", i);
+//    tuple<float, float> gfcc_normalized_range = make_tuple(0, 1.0);
+//
+//    // BFCC
+//    vector<Real> bfcc_bands = mltk.getMeanData("BFCC.bands", i);
+//    tuple<float, float> bfcc_normalized_range = make_tuple(0, 1.0);
 
     // ConstantQ
     vector<Real> constantq = mltk.getMeanData("ConstantQ.magnitude", i);
@@ -101,12 +101,12 @@ void ofApp::fillPixelColorsFromIncomingAudio() {
     if (whichAlgorithm == "mfcc") {
       results = mfcc_bands;
       results_range = mfcc_normalized_range;
-    } else if (whichAlgorithm == "gfcc") {
-      results = gfcc_bands;
-      results_range = gfcc_normalized_range;
-    } else if (whichAlgorithm == "bfcc") {
-      results = bfcc_bands;
-      results_range = bfcc_normalized_range;
+//    } else if (whichAlgorithm == "gfcc") {
+//      results = gfcc_bands;
+//      results_range = gfcc_normalized_range;
+//    } else if (whichAlgorithm == "bfcc") {
+//      results = bfcc_bands;
+//      results_range = bfcc_normalized_range;
     } else if (whichAlgorithm == "constantq") {
       results = constantq;
       results_range = constantq_range;
@@ -238,12 +238,13 @@ void ofApp::keyPressed(int key){
     case 'c':
       whichAlgorithm = "constantq";
       break;
-    case 'b':
-      whichAlgorithm = "bfcc";
-      break;
-    case 'g':
-      whichAlgorithm = "gfcc";
-      break;
+    // the rest are unsupported for now
+//    case 'b':
+//      whichAlgorithm = "bfcc";
+//      break;
+//    case 'g':
+//      whichAlgorithm = "gfcc";
+//      break;
   }
 }
 
