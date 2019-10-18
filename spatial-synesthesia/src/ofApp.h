@@ -10,15 +10,10 @@
 class ofApp : public ofBaseApp {
 public:
   bool showGui = true;
-  bool showBands = true;
-  bool showCoefs = true;
-  bool showHpcp = false;
-  // -1 = mono aggregate
-  int activeChannel = -1;
   
-  int numberOfOutputChannels = 0;
+  int numberOfOutputChannels = 2;
   // should match the same variable in ofMLTK.h
-  int numberOfInputChannels = 1;
+  int numberOfInputChannels = 4;
   int sampleRate = 44100;
   int frameSize = 1024;
   int numberOfBuffers = 4;
@@ -72,10 +67,15 @@ public:
   void gotMessage(ofMessage msg);
   
 private:
+  string whichAlgorithm = "mfcc";
   bool hasTimelineReachedEnd = false;
   // flush these to audioOut() once hasTimelineReachedEnd == true
   queue<ofSoundBuffer> delayedOutputBuffers;
   void fillPixelColorsFromIncomingAudio();
   void drawPixelColors();
   void drawLiveMFCCBands();
+  
+  // lol super janky
+  float minCQ = 0.0001;
+  float maxCQ = 0.0001;
 };

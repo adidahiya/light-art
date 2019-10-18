@@ -78,15 +78,63 @@ void ofApp::draw(){
 
 void ofApp::fillPixelColorsFromIncomingAudio() {
   for (int i = 0; i < numberOfInputChannels; i++) {
-    Real rms = mltk.getValue("RMS", i);
-    vector<Real> mfcc_bands = mltk.getData("MFCC.bands", i);
+    const Real rms = mltk.getValue("RMS", i);
+
+    // MFCC
+    vector<Real> mfcc_bands = mltk.getMeanData("MFCC.bands", i);
+    tuple<float, float> mfcc_normalized_range = make_tuple(0, 1.0);
+
+    // GFCC
+    vector<Real> gfcc_bands = mltk.getMeanData("GFCC.bands", i);
+    tuple<float, float> gfcc_normalized_range = make_tuple(0, 1.0);
+
+    // BFCC
+    vector<Real> bfcc_bands = mltk.getMeanData("BFCC.bands", i);
+    tuple<float, float> bfcc_normalized_range = make_tuple(0, 1.0);
+
+    // ConstantQ
+    vector<Real> constantq = mltk.getMeanData("ConstantQ.magnitude", i);
+    tuple<float, float> constantq_range = make_tuple(minCQ, maxCQ);
+
+    vector<Real> &results = mfcc_bands;
+    tuple<float, float> &results_range = mfcc_normalized_range;
+    if (whichAlgorithm == "mfcc") {
+      results = mfcc_bands;
+      results_range = mfcc_normalized_range;
+    } else if (whichAlgorithm == "gfcc") {
+      results = gfcc_bands;
+      results_range = gfcc_normalized_range;
+    } else if (whichAlgorithm == "bfcc") {
+      results = bfcc_bands;
+      results_range = bfcc_normalized_range;
+    } else if (whichAlgorithm == "constantq") {
+      results = constantq;
+      results_range = constantq_range;
+    }
 
     ofColor framePixelColor = ofColor();
     framePixelColor.setHsb(0, 0, 0);
-    for (int j = 0; j < mfcc_bands.size(); j++) {
+    for (int j = 0; j < results.size(); j++) {
       ofColor contributingBandColor = ofColor();
-      float hue = ofxeasing::map(j, 0, mfcc_bands.size(), 0, 255, ofxeasing::linear::easeOut);
-      float brightness = ofMap(mfcc_bands[j]/rms, 0, 1.0, 0, 40 * brightnessFactor.get(), true);
+      
+      const float hue = ofxeasing::map(j, 0, results.size(), 0, 255, ofxeasing::linear::easeOut);
+
+      Real result = results[j];
+      if (whichAlgorithm == "mfcc" || whichAlgorithm == "gfcc" || whichAlgorithm == "bfcc") {
+        result /= rms;
+      }
+      if (whichAlgorithm == "constantq") {
+        if (result < minCQ) {
+          minCQ = result;
+          get<0>(results_range) = minCQ;
+        } else if (result > maxCQ) {
+          maxCQ = result;
+          get<1>(results_range) = maxCQ;
+        }
+      }
+
+      const float brightness = ofMap(result, get<0>(results_range), get<1>(results_range), 0, 40 * brightnessFactor.get(), true);
+      
       contributingBandColor.setHsb(hue, 240, brightness);
       framePixelColor += contributingBandColor;
     }
@@ -184,20 +232,17 @@ void ofApp::keyPressed(int key){
     case 'd':
       showGui = !showGui;
       break;
-    case 'q':
-      activeChannel = -1;
+    case 'm':
+      whichAlgorithm = "mfcc";
       break;
-    case 'w':
-      activeChannel = 0;
+    case 'c':
+      whichAlgorithm = "constantq";
       break;
-    case 'e':
-      activeChannel = 1;
+    case 'b':
+      whichAlgorithm = "bfcc";
       break;
-    case 'r':
-      activeChannel = 2;
-      break;
-    case 't':
-      activeChannel = 3;
+    case 'g':
+      whichAlgorithm = "gfcc";
       break;
   }
 }
