@@ -11,7 +11,7 @@ class ofApp : public ofBaseApp {
 public:
   bool showGui = true;
   
-  int numberOfOutputChannels = 2;
+  int numberOfOutputChannels = 4;
   // should match the same variable in ofMLTK.h
   int numberOfInputChannels = 4;
   int sampleRate = 44100;
@@ -19,7 +19,7 @@ public:
   int numberOfBuffers = 4;
   int numPixelsPerChannel = 60;
   // changing this controls the "speed" of the pixel animation
-  int numFramesPerPixel = 3;
+  int numFramesPerPixel = 4;
 
   ofColor backgroundColor;
   ofMutex mutex;
@@ -71,6 +71,8 @@ private:
   bool hasTimelineReachedEnd = false;
   // flush these to audioOut() once hasTimelineReachedEnd == true
   queue<ofSoundBuffer> delayedOutputBuffers;
+  // HACKHACK: how do we calculate this number? just used trial and error for now
+  const int NUM_EMPTY_OUTPUT_BUFFERS = 80;
   void fillPixelColorsFromIncomingAudio();
   void drawPixelColors();
   void drawLiveMFCCBands();

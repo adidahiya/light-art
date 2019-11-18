@@ -24,6 +24,9 @@ void ofApp::setup(){
     pixelColors[i].assign(numPixelsPerChannel, ofColor::black);
   }
   currentPixelFrames.resize(numberOfInputChannels);
+  for (int i = 0; i < NUM_EMPTY_OUTPUT_BUFFERS; i++) {
+    delayedOutputBuffers.push(ofSoundBuffer());
+  }
   
   // set up aggregation
   const char *stats[4] = { "mean", "var", "min", "max" };
@@ -81,7 +84,7 @@ void ofApp::fillPixelColorsFromIncomingAudio() {
     const Real rms = mltk.getValue("RMS", i);
 
     // MFCC
-    vector<Real> mfcc_bands = mltk.getMeanData("MFCC.bands", i);
+    vector<Real> mfcc_bands = mltk.getData("MFCC.bands", i);
     tuple<float, float> mfcc_normalized_range = make_tuple(0, 1.0);
 
 //    // GFCC
@@ -93,7 +96,7 @@ void ofApp::fillPixelColorsFromIncomingAudio() {
 //    tuple<float, float> bfcc_normalized_range = make_tuple(0, 1.0);
 
     // ConstantQ
-    vector<Real> constantq = mltk.getMeanData("ConstantQ.magnitude", i);
+    vector<Real> constantq = mltk.getData("ConstantQ.magnitude", i);
     tuple<float, float> constantq_range = make_tuple(minCQ, maxCQ);
 
     vector<Real> &results = mfcc_bands;
